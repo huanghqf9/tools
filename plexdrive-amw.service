@@ -1,0 +1,13 @@
+[Unit]
+Description=Plexdrive-amw
+AssertPathIsDirectory=/plex/disk/amw
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/plexdrive mount  -c /root/config/amw  -o allow_other  -v 0  --refresh-interval=1m  --cache-file=/root/.plexdrive_amw/cache.bolt  --chunk-check-threads=10  --chunk-load-threads=10  --chunk-load-ahead=10  --drive-id=0AAiMRYB6r-_4Uk9PVA --max-chunks=20  /plex/disk/amw
+ExecStop=/bin/fusermount -u /plex/disk/amw
+Restart=on-abort
+
+[Install]
+WantedBy=default.target
