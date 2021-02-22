@@ -8,3 +8,11 @@ location: /etc/systemd/system/plexdrive-XX.service
 apt install fuse
 
 apt install iperf3
+
+systemctl daemon-reload  
+
+systemctl enable xxx 
+
+systemctl start xxx 
+
+systemctl status xxx 
