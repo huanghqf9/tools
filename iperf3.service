@@ -1,0 +1,9 @@
+[Unit]
+Description=A TCP, UDP, and SCTP network bandwidth measurement tool
+Atfter=network.target
+
+[Service]
+ExecStart=/usr/bin/iperf3 -s
+
+[Install]
+WantedBy=default.target
