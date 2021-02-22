@@ -16,3 +16,6 @@ systemctl enable xxx
 systemctl start xxx 
 
 systemctl status xxx 
+
+
+chown -R apache:apache  .
