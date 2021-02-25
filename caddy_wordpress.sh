@@ -470,6 +470,8 @@ install_wp(){
     unzip dux.zip
     wget https://github.com/V2RaySSR/V2RaySSR/raw/master/Git-alpha.zip
     unzip Git-alpha.zip
+    wget https://raw.githubusercontent.com/huanghqf9/tools/main/niRvana4.5.3.zip
+    unzip niRvana4.5.3.zip
     green "===================="
     green "  8.配置wordpress"
     green "===================="
