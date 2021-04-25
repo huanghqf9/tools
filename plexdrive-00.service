@@ -5,7 +5,7 @@ After=network-online.target
 
 [Service]
 Type=simple
-ExecStart=/usr/local/bin/plexdrive mount  -c /root/config/00  -o allow_other  -v 0  --refresh-interval=1m  --cache-file=/root/.plexdrive_00/cache.bolt  --chunk-check-threads=10  --chunk-load-threads=10  --chunk-load-ahead=10  --drive-id=0AHPon9AmIfY_Uk9PVA  --max-chunks=20  /plex/disk/00
+ExecStart=/usr/local/bin/plexdrive mount  -c /root/config/00  -o allow_other  -v 0  --refresh-interval=1m  --cache-file=/root/.plexdrive_00/cache.bolt  --chunk-check-threads=10  --chunk-load-threads=10  --chunk-load-ahead=10  --drive-id=0AKY0FqgCk2fTUk9PVA  --max-chunks=20  /plex/disk/00
 ExecStop=/bin/fusermount -u /plex/disk/00
 Restart=on-abort
 
